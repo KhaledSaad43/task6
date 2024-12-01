@@ -1,0 +1,116 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.section1{
+    position: relative;
+    background: linear-gradient(to right , orange , yellow);
+    height: 40vh;
+}
+.section1 p{
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    padding-top:7%;
+    font-size: 30px;
+    color: white;
+    font-weight: bold;
+    animation: moveY 4s 0.3s infinite linear;
+}
+@keyframes moveY {
+    0%{
+        transform: translateY(0px);
+    }
+    30%{
+        transform: translateY(-20px);
+    }
+    70%{
+        transform: translateY(20px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+
+}
+.section2{
+    position: relative;
+    background: linear-gradient(to right , darkgreen , green);
+    height: 40vh;
+}
+.section2 p{
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    padding-top:7%;
+    font-size: 3rem;
+    color: white;
+    font-weight: bold;
+    animation: opacitymove 2s 1s infinite linear;
+}
+@keyframes opacitymove {
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity:1;
+    }
+    100%{
+         opacity:0;
+    }
+
+}
+.section3{
+    position: relative;
+    background: linear-gradient(to right , brown , gray);
+    height: 40vh;
+}
+.section3 p{
+    text-align: center;
+    padding: 7%;
+    left: 45%;
+    top: 30%;
+    font-size: 3rem;
+    color: white;
+    font-weight: bold;
+    transform-origin: center center;
+    animation: rotatemove 2s  infinite linear;
+}
+@keyframes rotatemove {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+
+}
+.section4{
+    position: relative;
+    background: linear-gradient(to right , darkblue , blue , lightblue);
+    height: 40vh;
+}
+.section4 p{
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    padding-top:7%;
+    font-size: 3rem;
+    color: white;
+    font-weight: bold;
+    animation: scalemove 2s  infinite linear;
+    
+}
+@keyframes scalemove {
+    0%{
+        transform: scale(0);
+    }
+    50%{
+        transform: scale(1.1);
+    }
+    100%{
+        transform: scale(0);
+    }
+
+}
